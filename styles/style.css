@@ -10,7 +10,7 @@
 :root {
 	--cor01: #e6e6e6;
 	--cor02: hsl(200, 98%, 39.4%);
-	--cor03:  #00aaff;
+	--cor03: hsl(201, 96.3%, 32.2%);
 	
 	--fonte-t: 'Zeniq';
 	--fonte-p: 'Roboto', sans-serif;
@@ -52,7 +52,7 @@ header > p {
 }
 
 .search-box {
-	background-color: var(--cor02);
+	background-color: var(--cor03);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -69,17 +69,18 @@ header > p {
 }
 
 ::-webkit-input-placeholder {
-	color: var(--cor02);
+	color: var(--cor01);
 }
 
 .search-btn {
-	background-color: var(--cor02);
+	background-color: var(--cor03);
 	height: 35px;
 	width: 35px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border-radius: 50%;
+	transition: .5s;
 }
 
 .search-box:hover > .search-txt {
