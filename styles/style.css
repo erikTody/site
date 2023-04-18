@@ -11,6 +11,7 @@
 	--cor01: #e6e6e6;
 	--cor02: hsl(200, 98%, 39.4%);
 	--cor03: hsl(201, 96.3%, 32.2%);
+	--cor04: #015380;
 	
 	--fonte-t: 'Zeniq';
 	--fonte-p: 'Roboto', sans-serif;
@@ -30,16 +31,17 @@ body {
 }
 
 header {
-	background-color: var(--cor02);
+	background-image: linear-gradient(var(--cor02), var(--cor03));
 	color: var(--cor01);
 	text-align: center;
-	height: 11vh;
+	height: 13vh;
 	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 header > h1 {
 	font-family: var(--fonte-t);
-	font-size: 40px;
+	font-size: 3em;
   margin-top: 15px;
   font-weight: normal;
 }
@@ -47,12 +49,16 @@ header > h1 {
 header > p {
 	font-family: var(--fonte-p);
 	font-weight: 300;
-	font-size: 12px;
+	font-size: 1em;
 	margin: 10px 0 10px 0;
 }
 
-.search-box {
+nav {
 	background-color: var(--cor03);
+}
+
+.search-box {
+	background-color: var(--cor04);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -69,11 +75,11 @@ header > p {
 }
 
 ::-webkit-input-placeholder {
-	color: var(--cor01);
+	color: var(--cor02);
 }
 
 .search-btn {
-	background-color: var(--cor03);
+	background-color: var(--cor04);
 	height: 35px;
 	width: 35px;
 	display: flex;
@@ -84,5 +90,31 @@ header > p {
 }
 
 .search-box:hover > .search-txt {
-	width: 200px;
+	width: 300px;
 }
+
+.menu {
+	background-color: var(--cor03);
+	padding:5px;
+}
+
+.links {
+	text-decoration: none;
+	color: var(--cor01);
+	font-family: var(--fonte-p);
+	font-weight: bold;
+	font-size: 15px;
+	margin-left: 30px;
+	transition: .5s;
+}
+
+.links:hover {
+	background-color: var(--cor02);
+	color: white;
+	font-weight: bolder;
+	border-radius: 10px;
+	padding: 5px;
+	
+}
+
+
