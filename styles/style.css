@@ -34,7 +34,7 @@ header {
 	background-image: linear-gradient(var(--cor02), var(--cor03));
 	color: var(--cor01);
 	text-align: center;
-	height: 7vh;
+	height: 6vh;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	position: relative;
@@ -42,7 +42,7 @@ header {
 
 header > h1 {
 	font-family: var(--fonte-t);
-	font-size: 3em;
+	font-size: 2.5em;
   margin-top: 15px;
   font-weight: normal;
 }
@@ -61,7 +61,7 @@ nav {
 .search-box {
 	background-color: var(--cor04);
 	display: flex;
-	justify-content: right;
+	justify-content: space-between;
 	align-items: center;
 	height: 35px;
 }
@@ -92,19 +92,21 @@ nav {
 }
 
 .search-box:hover > .search-txt {
-	width: 90vw;
+	width: 200px;
 	margin: 0 0 0 20px;
 }
 
-.menu-lateral {
-	background-color: red;
-	width: 30vw;
-	height: 100vw;
+.links-menu {
+	text-decoration: none;
+	color: var(--cor04);
 }
 
-.menu {
-	background-color: var(--cor03);
-	padding:5px;
+ul {
+	list-style: none;
+}
+
+#menu {
+	display: none;
 }
 
 .links {
@@ -127,14 +129,10 @@ nav {
 }
 
 main {
-   background-color: blue;
+   background-color: #fff;
    margin: auto;
    min-width: 250px;
    max-width: 1000px;
-
-.apps {
-	margin: 10px
-}
 
 .logo-apps {
 	width: 90px;
