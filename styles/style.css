@@ -27,7 +27,7 @@ body {
 	background-color: var(--cor01);
 	font-family: var(--fonte-padrao);
 	height: 100vh;
-	width: 100vw
+	width: 100vw;
 }
 
 header {
@@ -127,10 +127,10 @@ nav {
 }
 
 main {
-	display: block;
-	margin: auto;
-  min-width: 700px;
-  max-width: 1000px;
+   background-color: blue;
+   margin: auto;
+   min-width: 250px;
+   max-width: 1000px;
 
 .apps {
 	margin: 10px
